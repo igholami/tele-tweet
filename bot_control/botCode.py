@@ -64,7 +64,7 @@ def handleMessage(msg):
 		sendMessage(user.chat_id, 'حالا هی تو ادیت کن! هیچی نمیشه')
 	elif len(msg['text']) > 300:
 		sendMessage(user.chat_id, 'بیشتر از ۳۰۰ تا کاراکتر نمیتونی بفرستی :پی')
-	elif int((timezone.now() - user.last_activity).total_seconds()) > 10 or user.tweet_counter == 0:
+	elif int((timezone.now() - user.last_activity).total_seconds()) > 1800 or user.tweet_counter == 0:
 		sendChannel(msg['text'] + '\n\n' + '#__' + user.nickname + '__' + '\n' + '@U2eet')
 		user.new_tweet()
 		sendMessage(user.chat_id, 'توییت شما با موفقیت داستان شد ^_^')
