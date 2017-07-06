@@ -4,7 +4,7 @@ def botCore():
 	return telepot.Bot(settings.BOT_TOKEN)
 def ChannelCore():
 	from pytg import Telegram
-	tg = Telegram(telegram="../Cli/tg/bin/telegram-cli", pubkey_file="../Cli/tg/tg-server.pub")
+	tg = Telegram(telegram="/home/Cli/tg/bin/telegram-cli", pubkey_file="/home/Cli/tg/tg-server.pub")
 	return tg.sender
 def sendChannel(text):
 	sender = ChannelCore()
