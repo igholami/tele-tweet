@@ -24,7 +24,6 @@ class User(models.Model):
 class Channel(models.Model):
 	text = models.CharField(max_length=3000)
 	time = models.DateTimeField(default=timezone.now)
-	new = True
 	def __str__(self):
 		return self.text
 	def save(self, *args, **kwargs):
@@ -32,14 +31,10 @@ class Channel(models.Model):
 		tmp = self.pk
 		super(Channel, self).save(*args, **kwargs)
 		for user in User.objects.all():
-			if tmp is None:
-				new = Message(user = user, channel = self)
-				new.save()
-			else:
+			if not tmp is None:
 				A = Message.objects.filter(user = user, channel = self)
 				for a in A:
 					a.edit()
-		self.new = False
 
 class Message(models.Model):
 	message_id = models.IntegerField(default = -1)
