@@ -123,6 +123,10 @@ Messages are posted to the channel in this format:
 - `/start` - Register or restart the bot interaction
 - Any text message - Post as a tweet (if registered and rate limit allows)
 
+## Security Note
+
+**Important**: Historical commits contain revoked/invalid credentials that have been replaced with secure environment variable configuration. All sensitive data in git history has been invalidated and poses no security risk.
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
