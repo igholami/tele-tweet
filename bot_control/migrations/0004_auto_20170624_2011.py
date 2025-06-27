@@ -7,20 +7,19 @@ import django.utils.timezone
 
 
 class Migration(migrations.Migration):
-
     dependencies = [
-        ('bot_control', '0003_channel_time'),
+        ("bot_control", "0003_channel_time"),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='channel',
-            name='users',
-            field=models.ManyToManyField(to='bot_control.User'),
+            model_name="channel",
+            name="users",
+            field=models.ManyToManyField(to="bot_control.User"),
         ),
         migrations.AlterField(
-            model_name='channel',
-            name='time',
+            model_name="channel",
+            name="time",
             field=models.DateTimeField(default=django.utils.timezone.now),
         ),
     ]

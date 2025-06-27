@@ -8,16 +8,17 @@ from django.utils.timezone import utc
 
 
 class Migration(migrations.Migration):
-
     dependencies = [
-        ('bot_control', '0002_channel'),
+        ("bot_control", "0002_channel"),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='channel',
-            name='time',
-            field=models.DateTimeField(default=datetime.datetime(2017, 6, 24, 11, 58, 8, 972245, tzinfo=utc)),
+            model_name="channel",
+            name="time",
+            field=models.DateTimeField(
+                default=datetime.datetime(2017, 6, 24, 11, 58, 8, 972245, tzinfo=utc)
+            ),
             preserve_default=False,
         ),
     ]

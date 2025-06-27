@@ -7,20 +7,19 @@ import django.utils.timezone
 
 
 class Migration(migrations.Migration):
-
     dependencies = [
-        ('bot_control', '0005_auto_20170624_2035'),
+        ("bot_control", "0005_auto_20170624_2035"),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='user',
-            name='last_activity',
+            model_name="user",
+            name="last_activity",
             field=models.DateTimeField(default=django.utils.timezone.now),
         ),
         migrations.AlterField(
-            model_name='message',
-            name='message_id',
+            model_name="message",
+            name="message_id",
             field=models.IntegerField(default=-1),
         ),
     ]

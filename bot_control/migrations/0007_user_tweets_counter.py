@@ -6,15 +6,14 @@ from django.db import migrations, models
 
 
 class Migration(migrations.Migration):
-
     dependencies = [
-        ('bot_control', '0006_auto_20170703_2355'),
+        ("bot_control", "0006_auto_20170703_2355"),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='user',
-            name='tweets_counter',
+            model_name="user",
+            name="tweets_counter",
             field=models.IntegerField(default=0),
         ),
     ]

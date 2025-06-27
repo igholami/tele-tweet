@@ -7,31 +7,42 @@ import django.db.models.deletion
 
 
 class Migration(migrations.Migration):
-
     dependencies = [
-        ('bot_control', '0004_auto_20170624_2011'),
+        ("bot_control", "0004_auto_20170624_2011"),
     ]
 
     operations = [
         migrations.CreateModel(
-            name='Message',
+            name="Message",
             fields=[
-                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('message_id', models.IntegerField()),
+                (
+                    "id",
+                    models.AutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("message_id", models.IntegerField()),
             ],
         ),
         migrations.RemoveField(
-            model_name='channel',
-            name='users',
+            model_name="channel",
+            name="users",
         ),
         migrations.AddField(
-            model_name='message',
-            name='channel',
-            field=models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='bot_control.Channel'),
+            model_name="message",
+            name="channel",
+            field=models.ForeignKey(
+                on_delete=django.db.models.deletion.CASCADE, to="bot_control.Channel"
+            ),
         ),
         migrations.AddField(
-            model_name='message',
-            name='user',
-            field=models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='bot_control.User'),
+            model_name="message",
+            name="user",
+            field=models.ForeignKey(
+                on_delete=django.db.models.deletion.CASCADE, to="bot_control.User"
+            ),
         ),
     ]

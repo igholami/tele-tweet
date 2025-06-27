@@ -6,15 +6,14 @@ from django.db import migrations, models
 
 
 class Migration(migrations.Migration):
-
     dependencies = [
-        ('bot_control', '0008_auto_20170704_0011'),
+        ("bot_control", "0008_auto_20170704_0011"),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='user',
-            name='nickname',
-            field=models.CharField(blank=True, default='', max_length=30),
+            model_name="user",
+            name="nickname",
+            field=models.CharField(blank=True, default="", max_length=30),
         ),
     ]

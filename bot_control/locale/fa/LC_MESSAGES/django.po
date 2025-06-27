@@ -1,0 +1,71 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-06-27 20:57+0330\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: bot_control/bot_code.py:49
+msgid "Welcome :)"
+msgstr "خوش آمدید :)"
+
+#: bot_control/bot_code.py:51
+msgid "Enter your nickname"
+msgstr "نام مستعارتو وارد کن"
+
+#: bot_control/bot_code.py:53
+msgid "What's up?"
+msgstr "که چی"
+
+#: bot_control/bot_code.py:56
+msgid "You haven't chosen a name yet! Write your name"
+msgstr "هنوز اسم انتخاب نکردی! اسمتو بنویس"
+
+#: bot_control/bot_code.py:58
+msgid "No more than 30 characters"
+msgstr "۳۰ کاراکتر بیشتر نشه"
+
+#: bot_control/bot_code.py:62
+msgid "This name has already been chosen!"
+msgstr "این اسم قبلا انتخاب شده!"
+
+#: bot_control/bot_code.py:66
+msgid "Great! :))"
+msgstr "رواله :))"
+
+#: bot_control/bot_code.py:67
+msgid "Now you can post tweets :)"
+msgstr "از الان میتونی توییت بذاری :)"
+
+#: bot_control/bot_code.py:69
+msgid "Please send text"
+msgstr "ناموصا متن بفرست"
+
+#: bot_control/bot_code.py:71
+msgid "Stop editing! Nothing will happen"
+msgstr "حالا هی تو ادیت کن! هیچی نمیشه"
+
+#: bot_control/bot_code.py:73
+msgid "You cannot send more than 300 characters :P"
+msgstr "بیشتر از ۳۰۰ تا کاراکتر نمیتونی بفرستی :پی"
+
+#: bot_control/bot_code.py:79
+msgid "Your tweet was posted successfully ^_^"
+msgstr "توییت شما با موفقیت داستان شد ^_^"
+
+#: bot_control/bot_code.py:81
+msgid "Wait another half hour"
+msgstr "یه نیم ساعت صبر کن دیگه"

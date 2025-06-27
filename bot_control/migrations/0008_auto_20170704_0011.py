@@ -6,15 +6,14 @@ from django.db import migrations
 
 
 class Migration(migrations.Migration):
-
     dependencies = [
-        ('bot_control', '0007_user_tweets_counter'),
+        ("bot_control", "0007_user_tweets_counter"),
     ]
 
     operations = [
         migrations.RenameField(
-            model_name='user',
-            old_name='tweets_counter',
-            new_name='tweet_counter',
+            model_name="user",
+            old_name="tweets_counter",
+            new_name="tweet_counter",
         ),
     ]
