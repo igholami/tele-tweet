@@ -11,6 +11,9 @@ https://docs.djangoproject.com/en/1.11/ref/settings/
 """
 
 import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -20,14 +23,14 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'et&eiu^1wq^bip*fn$@w7p5o2aesk-)&5$b@yw3kanb6bz*a^7'
+SECRET_KEY = os.environ.get('SECRET_KEY', 'your-secret-key-here')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
-BOT_TOKEN = '266244747:AAFcckUvOIuRerdt_rzlp3e_yDK_qzeIkFc'
+BOT_TOKEN = os.environ.get('BOT_TOKEN', 'your-bot-token-here')
 
 # Application definition
 
@@ -78,11 +81,11 @@ WSGI_APPLICATION = 'Bot.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'bot',
-		'USER': 'botuser',
-		'PASSWORD': 'OeRgKq',
-		'HOST': 'localhost',
-		'PORT': '',
+        'NAME': os.environ.get('DB_NAME', 'bot'),
+		'USER': os.environ.get('DB_USER', 'botuser'),
+		'PASSWORD': os.environ.get('DB_PASSWORD', 'your-db-password'),
+		'HOST': os.environ.get('DB_HOST', 'localhost'),
+		'PORT': os.environ.get('DB_PORT', ''),
     }
 }
 
